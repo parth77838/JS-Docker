@@ -13,7 +13,7 @@
 </div>
 <div id="id2">
     <div id="id3">
-       <p id="para">root@jahanvi-arora:~ </p>
+       <p id="para">root@parth-sharma:~ </p>
         <input type="text" id="text" placeholder="Type your Command" name="x" >
         <button onclick="commands();" id="button">RUN</button>
     </div>
@@ -29,7 +29,7 @@
         var xhr = new XMLHttpRequest();
         alert(i);
         alert("Sending your Request");
-        xhr.open("GET","http://34.200.239.188/cgi-bin/new.py?x="+document.getElementById("text").value,true);
+        xhr.open("GET","http://host ip/cgi-bin/new.py?x="+document.getElementById("text").value,true);
         xhr.send();
         xhr.onload = function()
         {   
